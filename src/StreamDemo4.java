@@ -34,7 +34,9 @@ public class StreamDemo4 {
 
         Optional<String> max = Stream.of(str.split(" ")).max((s1, s2) -> s1.length() - s2.length());
         System.out.println(max.orElse("-1"));
-
+        /*
+            短路操作
+         */
         OptionalInt first = new Random().ints().findFirst();
         System.out.println(first.getAsInt());
     }
