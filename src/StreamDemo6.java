@@ -1,13 +1,18 @@
 import org.apache.commons.collections.MapUtils;
 
+import java.awt.*;
 import java.util.*;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamDemo6 {
     public static void main(String[] args) {
         List<Student> students = Arrays.asList(
                 new Student("小王", 12, Gender.MALE, Grade.one),
-                new Student("小张", 18,Gender.Girl,Grade.one),
+                new Student("小李", 18,Gender.Girl,Grade.one),
                 new Student("小刘", 19,Gender.Girl,Grade.three),
                 new Student("小李", 13,Gender.MALE,Grade.two),
                 new Student("小赵", 20,Gender.MALE,Grade.three),
